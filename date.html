@@ -1,0 +1,127 @@
+<!DO class="in"CTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Kurale&family=Lato:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,200;1,400&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="email.css" />
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Email-verification</title>
+  </head>
+  <body>
+    <div class="date">2022-12-20T1321413fsdfggfdtrdrassd</div>
+
+    <div class="final">2005/12/12</div>
+    <input type="text" id="text" />
+    <input type="date" name="" id="vl" />
+    <div class="date">vi-ct-r</div>
+    <div class="contain">
+      <div class="container">
+        <div class="container-1">
+          <div class="con-1">Email Verification</div>
+          <div class="con-2">
+            An OTP Code was sent to the email address you filled in.
+          </div>
+          <div class="con-3">
+            <div class="input">
+              <input
+                class="in"
+                type="number"
+                name=""
+                id="input-1"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                placeholder="    *"
+                maxlength="1"
+              />
+            </div>
+            <div class="input">
+              <input
+                class="in"
+                type="number"
+                name=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                id="input-2"
+                maxlength="1"
+                placeholder="    *"
+              />
+            </div>
+            <div class="input">
+              <input
+                class="in"
+                type="number"
+                name=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                id="input-3"
+                maxlength="1"
+                placeholder="    *"
+              />
+            </div>
+            <div class="input">
+              <input
+                class="in"
+                type="number"
+                name=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                id="input-4"
+                maxlength="1"
+                placeholder="    *"
+              />
+            </div>
+          </div>
+          <div class="cov">
+            <div class="con-4"><a class="fu" href="#">Resend Code?</a></div>
+            <div class="con-5">
+              <a class="invest" id="verify" href="#">Verify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // function myfunc() {
+      //   const first = document.getElementById("input-1").value;
+      //   const sec = document.getElementById("input-2").value;
+      //   const thir = document.getElementById("input-3").value;
+      //   const four = document.getElementById("input-4").value;
+      //   // const display = document.getElementById("display");
+
+      //   console.log(first, sec, thir, four);
+      //   const glow = [first, sec, thir, four];
+      //   const glowu = glow.join("");
+      //   console.log(glowu);
+      //   const glowup = glowu.trim(" ,");
+      //   console.log(glowup);
+      //   display.value = glowu;
+      // }
+
+      // const first = document.getElementById("input-1").value;
+      // const sec = document.getElementById("input-2").value;
+      // const thir = document.getElementById("input-3").value;
+      // const four = document.getElementById("input-4").value;
+      // // const display = document.getElementById("display");
+      // const verify = document.getElementById("verify");
+      // verify.addEventListener("click", function () {
+      //   console.log(first, sec, thir, four);
+      //   const glow = [first, sec, thir, four];
+      //   const glowu = glow.join("/");
+      // });
+      const date = document.querySelector(".date").textContent;
+      console.log(date);
+
+      console.log(date.replaceAll("-", "/"));
+      console.log(date.replaceAll("-", "-").split("T"));
+
+      const [final, sell] = date.replaceAll("-", "-").split("T");
+      console.log(final);
+      document.getElementById("vl").value = `${final}`;
+    </script>
+  </body>
+</html>
